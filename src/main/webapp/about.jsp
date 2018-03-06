@@ -16,13 +16,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CodeU Chat App</title>
+  <title>Team 28 Chat App</title>
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
   <nav>
-    <a id="navTitle" href="/">CodeU Chat App</a>
+    <a id="navTitle" href="/">Galehaut</a>
     <a href="/conversations">Conversations</a>
     <% if(request.getSession().getAttribute("user") != null){ %>
       <a>Hello <%= request.getSession().getAttribute("user") %>!</a>
@@ -38,8 +38,8 @@
 
       <h1>About the CodeU Chat App</h1>
       <p>
-        This is an example chat application designed to be a starting point
-        for your CodeU project team work. Here's some stuff to think about:
+        This is a chat application designed to be a starting point
+        for the CodeU project team work. Here's some stuff to think about:
       </p>
 
       <ul>
@@ -56,17 +56,8 @@
           requirements, privacy concerns, and accessibility and
           internationalization.</li>
         <li><strong>Our Developers:</strong> We are a team of university students aiming 
-          to improve our development skills by working with standard industry practices under 
-          the direction and aid of Google software engineers(P0).</li>
+          to improve our development skills by working with standard industry practices under the direction and aid of Google software engineers(P0).</li>
       </ul>
-
-      <p>
-        This is your code now. Get familiar with it and get comfortable
-        working with your team to plan and make changes. Start by updating the
-        homepage and this about page to tell your users more about your team.
-        This page should also be used to describe the features and improvements
-        you've added.
-      </p>
     </div>
   </div>
 </body>

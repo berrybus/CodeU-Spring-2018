@@ -16,13 +16,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CodeU Chat App</title>
+  <title>Team 28 Chat App</title>
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
   <nav>
-    <a id="navTitle" href="/">Team 28 Chat App</a>
+    <a id="navTitle" href="/">Galehaut</a>
     <a href="/conversations">Conversations</a>
     <% if(request.getSession().getAttribute("user") != null){ %>
       <a>Hello <%= request.getSession().getAttribute("user") %>!</a>
@@ -38,7 +38,7 @@
       style="width:75%; margin-left:auto; margin-right:auto; margin-top: 50px;">
 
       <h1>Team 28 Chat App</h1>
-      <h2>Welcome!</h2>
+      <h2>Welcome! Name pending...</h2>
 
       <ul>
         <li><a href="/login">Login</a> to get started.</li>
