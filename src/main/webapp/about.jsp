@@ -55,6 +55,9 @@
           What needs do they have? How could you help? Think about technical
           requirements, privacy concerns, and accessibility and
           internationalization.</li>
+        <li><strong>Our Developers:</strong> We are a team of university students aiming 
+          to improve our development skills by working with standard industry practices under 
+          the direction and aid of Google software engineers(P0).</li>
       </ul>
 
       <p>
