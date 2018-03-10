@@ -18,5 +18,20 @@ public class RegisterServlet extends HttpServlet {
    //Changed Section
    request.getRequestDispatcher("/WEB-INF/view/register.jsp").forward(request, response);
    //END Changed Section  	
+
+   //PART % - HANDLES POST RESPONSE AFTER SUBMITTING REGISTRATION
  }
+
+ @Override
+ public void doPost(HttpServletRequest request, HttpServletResponse response)
+     throws IOException, ServletException {
+
+   String username = request.getParameter("username");
+   String password = request.getParameter("password");
+
+   response.getWriter().println("<p>Username: " + username + "</p>");
+   response.getWriter().println("<p>Password: " + password + "</p>");
+ }
+
+ //END PART 5
 }
