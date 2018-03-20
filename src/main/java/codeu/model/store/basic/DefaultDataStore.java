@@ -98,7 +98,8 @@ public class DefaultDataStore {
     Collections.shuffle(randomUsernames);
 
     for (int i = 0; i < DEFAULT_USER_COUNT; i++) {
-      User user = new User(UUID.randomUUID(), randomUsernames.get(i), Instant.now());
+      //PART 1: Temp "password" passed to allow proper compilation 
+      User user = new User(UUID.randomUUID(), randomUsernames.get(i), "password" ,Instant.now());
       PersistentStorageAgent.getInstance().writeThrough(user);
       users.add(user);
     }
