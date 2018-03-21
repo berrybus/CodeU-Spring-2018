@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import codeu.model.data.User;
 import codeu.model.store.basic.UserStore;
+import org.mindrot.jbcrypt.*;
 
 /**
 * Servlet class responsible for user registration.
@@ -61,6 +62,8 @@ public class RegisterServlet extends HttpServlet {
 
    String username = request.getParameter("username");
    String password = request.getParameter("password");
+   // Use JBCript to generate pw hash
+   String passwordHash = BCrypt.hashpw(password, BCrypt.gensalt());
 
    //Error Checking for non-Alphanumeric Characters
    //Errors will be sent to register.jsp
@@ -82,7 +85,7 @@ public class RegisterServlet extends HttpServlet {
 
    //End check and add user if valid. Redirects to login page
 
-   User user = new User(UUID.randomUUID(), username, password, Instant.now());
+   User user = new User(UUID.randomUUID(), username, passwordHash, Instant.now());
    userStore.addUser(user);
 
    response.sendRedirect("/login");
