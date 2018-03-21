@@ -74,13 +74,7 @@ public class LoginServlet extends HttpServlet {
     }
 // TODO: add password
     if (!userStore.isUserRegistered(username)) {
-<<<<<<< HEAD
-      User user = new User(UUID.randomUUID(), username, null , Instant.now());
-=======
-
-      //TODO: Add Password
-      User user = new User(UUID.randomUUID(), username, null,  Instant.now());
->>>>>>> ce5f6653e09e970e65654beccbd6aee38ef13d19
+      User user = new User(UUID.randomUUID(), username, password , Instant.now());
       userStore.addUser(user);
     }
 
