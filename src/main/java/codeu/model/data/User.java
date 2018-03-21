@@ -16,11 +16,13 @@ package codeu.model.data;
 
 import java.time.Instant;
 import java.util.UUID;
+import java.lang.String;
 
 /** Class representing a registered user. */
 public class User {
   private final UUID id;
   private final String name;
+  private final String password;
   private final Instant creation;
 
   /**
@@ -30,9 +32,10 @@ public class User {
    * @param name the username of this User
    * @param creation the creation time of this User
    */
-  public User(UUID id, String name, Instant creation) {
+  public User(UUID id, String name, String password, Instant creation) {
     this.id = id;
     this.name = name;
+    this.password = password;
     this.creation = creation;
   }
 
@@ -46,8 +49,13 @@ public class User {
     return name;
   }
 
+  //Part 1: Added Password Parameter to User Class
+  public String getPassword() {
+   return password;
+  }
   /** Returns the creation time of this User. */
   public Instant getCreationTime() {
     return creation;
   }
+
 }
