@@ -16,6 +16,7 @@ package codeu.model.data;
 
 import java.time.Instant;
 import java.util.UUID;
+import org.kefirsf.bb.*;
 
 /** Class representing a message. Messages are sent by a User in a Conversation. */
 public class Message {
@@ -61,6 +62,11 @@ public class Message {
   /** Returns the text content of this Message. */
   public String getContent() {
     return content;
+  }
+
+  public String getProcessedContent() {
+    TextProcessor processor = BBProcessorFactory.getInstance().create();
+    return processor.process(content);
   }
 
   /** Returns the creation time of this Message. */
