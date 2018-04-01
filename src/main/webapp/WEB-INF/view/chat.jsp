@@ -25,6 +25,23 @@ List<Message> messages = (List<Message>) request.getAttribute("messages");
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+	ul {
+    	list-style-type: none;
+    	padding: 0;
+    	border: 1px solid #ddd;
+	}
+
+	ul li {
+    	padding: 8px 16px;
+    	border-bottom: 1px solid #ddd;
+	}
+
+	ul li:last-child {
+    	border-bottom: none
+	}
+	</style>
+
   <title><%= conversation.getTitle() %></title>
   <link rel="stylesheet" href="/css/main.css" type="text/css">
 
