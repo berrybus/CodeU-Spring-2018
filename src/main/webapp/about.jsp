@@ -31,6 +31,11 @@
       <a href="/register">Register</a>
     <% } %>
     <a href="/about.jsp">About</a>
+        <% if(request.getSession().getAttribute("user") != null){ %>
+      <form action="/logout" method="POST">
+      <button type="submit">logout</button>
+    </form>
+    <% } %>
   </nav>
 
   <div id="container">

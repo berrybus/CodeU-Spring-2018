@@ -23,6 +23,7 @@ List<Message> messages = (List<Message>) request.getAttribute("messages");
 %>
 
 <!DOCTYPE html>
+<script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
 <html>
 <head>
 	<style>
@@ -73,6 +74,11 @@ List<Message> messages = (List<Message>) request.getAttribute("messages");
       <a href="/register">Register</a>
     <% } %>
     <a href="/about.jsp">About</a>
+        <% if(request.getSession().getAttribute("user") != null){ %>
+      <form action="/logout" method="POST">
+      <button type="submit">logout</button>
+    </form>
+    <% } %>
   </nav>
 
   <div id="container">
@@ -109,7 +115,6 @@ List<Message> messages = (List<Message>) request.getAttribute("messages");
     <% } %>
 
     <hr/>
-
   </div>
 
 </body>

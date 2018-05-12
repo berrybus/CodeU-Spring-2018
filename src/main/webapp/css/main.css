@@ -37,7 +37,19 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #111;
+}
+
+nav button {
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  margin: 12px;
+  text-decoration: none;
+}
+
+nav button:hover {
+  background-color: #111;
 }
 
 #navTitle {
