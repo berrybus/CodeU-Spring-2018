@@ -34,6 +34,11 @@
       <a href="/register">Register</a>
     <% } %>
     <a href="/about.jsp">About</a>
+      <% if(request.getSession().getAttribute("user") != null){ %>
+      <form action="/logout" method="POST">
+      <button type="submit">logout</input>
+    </form>
+    <% } %>
   </nav>
 
   <div id="container">
@@ -57,7 +62,6 @@
     <% } %>
 
     <h1>Conversations</h1>
-
     <%
     List<Conversation> conversations =
       (List<Conversation>) request.getAttribute("conversations");
