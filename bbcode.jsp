@@ -33,6 +33,10 @@
         <li><strong>Underlined Text</strong> [u] TEXT HERE [/u] </li>
         <li><strong>Link</strong> [url] LINK HERE [/url]</li>
         <li><strong> Image </strong> [img] IMAGE LINK [/img]</li>
+        <li><strong> Color Text </strong> [color = (input color here)] TEXT HERE [/color]</li>
+        <li><strong> Font Size </strong> [size = (input size here)] TEXT HERE [/size]</li>
+        <li><strong> Font Type </strong> [font = (input font here)] TEXT HERE [/font]</li>
+        <li><strong> Alignment </strong> [align = (left, right, center)] TEXT HERE [/algin]</li>
       </ul>
     </div>
   </div>
