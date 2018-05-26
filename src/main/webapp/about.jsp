@@ -63,6 +63,15 @@
           internationalization.</li>
         <li><strong>Our Developers:</strong> We are a team of university students aiming 
           to improve our development skills by working with standard industry practices under the direction and aid of Google software engineers(P0).</li>
+          <li><strong>Bold Text</strong> [b] TEXT HERE [/b]</li>
+        <li><strong>Italicized Text</strong> [i]TEXT HERE [/i] </li>
+        <li><strong>Underlined Text</strong> [u] TEXT HERE [/u] </li>
+        <li><strong>Link</strong> [url] LINK HERE [/url]</li>
+        <li><strong> Image </strong> [img] IMAGE LINK [/img]</li>
+        <li><strong> Color Text </strong> [color = (input color here)] TEXT HERE [/color]</li>
+        <li><strong> Font Size </strong> [size = (input size here)] TEXT HERE [/size]</li>
+        <li><strong> Font Type </strong> [font = (input font here)] TEXT HERE [/font]</li>
+        <li><strong> Alignment </strong> [align = (left, right, center)] TEXT HERE [/algin]</li>
       </ul>
     </div>
   </div>

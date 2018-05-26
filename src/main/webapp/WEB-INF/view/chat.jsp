@@ -1,12 +1,9 @@
 <%--
   Copyright 2017 Google Inc.
-
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
      http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,22 +23,20 @@ List<Message> messages = (List<Message>) request.getAttribute("messages");
 <script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
 <html>
 <head>
-	<style>
-	ul {
-    	list-style-type: none;
-    	padding: 0;
-    	border: 1px solid #ddd;
-	}
-
-	ul li {
-    	padding: 8px 16px;
-    	border-bottom: 1px solid #ddd;
-	}
-
-	ul li:last-child {
-    	border-bottom: none
-	}
-	</style>
+  <style>
+  ul {
+      list-style-type: none;
+      padding: 0;
+      border: 1px solid #ddd;
+  }
+  ul li {
+      padding: 8px 16px;
+      border-bottom: 1px solid #ddd;
+  }
+  ul li:last-child {
+      border-bottom: none
+  }
+  </style>
 
   <title><%= conversation.getTitle() %></title>
   <link rel="stylesheet" href="/css/main.css" type="text/css">
@@ -116,6 +111,25 @@ List<Message> messages = (List<Message>) request.getAttribute("messages");
 
     <hr/>
   </div>
+
+  <div
+      style="margin:left;">
+      <p>
+        BBCODE KEY
+      </p>
+
+      <ul>
+        <li><strong>Bold Text</strong> [b] TEXT HERE [/b]</li>
+        <li><strong>Italicized Text</strong> [i]TEXT HERE [/i] </li>
+        <li><strong>Underlined Text</strong> [u] TEXT HERE [/u] </li>
+        <li><strong>Link</strong> [url] LINK HERE [/url]</li>
+        <li><strong> Image </strong> [img] IMAGE LINK [/img]</li>
+        <li><strong> Color Text </strong> [color = (input color here)] TEXT HERE [/color]</li>
+        <li><strong> Font Size </strong> [size = (input size here)] TEXT HERE [/size]</li>
+        <li><strong> Font Type </strong> [font = (input font here)] TEXT HERE [/font]</li>
+        <li><strong> Alignment </strong> [align = (left, right, center)] TEXT HERE [/algin]</li>
+      </ul>
+    </div>
 
 </body>
 </html>
